@@ -1,0 +1,355 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**Reset para REMS - 62.5 = 10px de 16px**/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*Globales*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Utilidades*/
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.Titulo2 {
+    color: burlywood;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.boton {
+    background-color: cadetblue;
+    padding: 1rem 3rem;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    border-radius: 20rem;
+}
+
+.boton-mensaje {
+    margin-left: 25rem;
+    font-size: 1.7rem;
+}
+
+
+
+/*Header*/
+
+.pagina-header {
+    padding: 1rem 0rem 3rem 0rem;
+}
+
+.pagina-header.inicio {
+    background-image: url(../img/Portada2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 6rem;
+    margin-bottom: 2rem;
+}
+
+.menu-header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.pagina-header h1 {
+    margin-top: 0rem;
+}
+
+.pagina-header p {
+    color: #ffffff;
+    font-family: cursive;
+    margin-top: -3rem;
+}
+
+.menu-header {
+    float: right;
+    display: block;
+    justify-content: space-between;
+    margin: -4rem 0 0 0;
+    font-size: medium;
+}
+
+
+.menu-header a:hover{
+    color: rgba(223, 189, 96, 0.767);
+}
+
+.centrar {
+    text-align: center;
+}
+
+
+
+/* Section: Make your Place */
+.imagen-mensaje {
+    background-image: url(../img/ShowRoom4.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.HomeRight {
+    border-right: 10px solid wheat;
+    padding-right: 20rem;
+}
+
+.HomeLeft {
+    border-left: 10px solid wheat;
+    padding-left: 20rem;
+}
+
+.contenido-mensaje {
+    color: #ffffff;
+    flex: 1;
+    margin-left: 2rem;
+}
+
+.contenido-mensaje a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contenido-mensaje a:hover{
+    color: rgba(231, 165, 66, 0.856);
+}
+
+.contenido-mensaje p {
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+/*Main*/
+/*Main: Servicios*/
+@media (min-width:768px) {
+    .dos-columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 8rem;
+        margin-top: 4rem;
+    }
+}
+
+.entrada-servicios img {
+    border-radius: 30%;
+}
+
+.entrada-servicios h3 {
+    color: burlywood;
+}
+
+.entrada-servicios p {
+    font-size: 1.4rem;
+}
+
+/*Historias*/
+.historias {
+    background-color: cadetblue;
+}
+
+.historias h2 {
+    color: #ffffff;
+    padding-top: 2rem;
+}
+
+.historias-contenido {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.historia {
+    flex: 0 0 calc(30.3% - 0.5rem);
+    /* border: 4px solid green; */
+    background-color: #ffffff;
+    margin: 1rem 2rem;
+    margin-bottom: 6rem;
+    border-radius: 10%;
+}
+
+.historia h4 {
+    text-align: center;
+}
+
+.historia img {
+    height: 30rem;
+    width: 50rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 0 30% 0 15%;
+}
+
+
+
+.historia-texto {
+    font-family: sans-serif;
+    font-style: oblique;
+    font-weight: 500;
+    padding: 2rem;
+}
+
+/*Book Now*/
+.Book-Now a {
+    color:#ffffff;
+    margin: 0rem 0rem 4rem 80rem ;
+}
+
+/*Formulario*/
+.contenedor-formulario {
+    width: 500px;
+    padding-inline-start: 70rem;
+}
+
+input {
+    display: block;
+    font-size: 1.8rem;
+    padding: 2rem;
+    margin: 4rem 2rem;
+    border: 1px solid rgb(119, 119, 119);
+    border-radius: 4rem;
+}
+
+#Name, 
+#Email,
+#Phone {
+    margin-left: -3rem;
+}
+
+input[type='radio'] {
+    margin: 1rem 2rem;
+}
+
+.lugar-trabajo label {
+    font-size: 1.8rem;
+    color: rgb(119, 119, 119);
+}
+
+.lugar-trabajo {
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-left: 2rem; */
+}
+
+textarea {
+    height: 15rem;
+    width: 20rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.boton-formulario {
+    background-color: orange;
+    color: #ffffff;
+    margin-left: 5rem;
+    margin-bottom: 10rem;
+}
+
+
+
+/*Footer*/
+
+.pagina-footer {
+    background-color: rgb(131, 101, 62);
+    margin-top: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    color: #ffffff;
+    margin: 0;
+}
+
+.menu-footer  a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.menu-footer a:hover{
+    color: rgba(223, 189, 96, 0.767);
+}
+
+/*Pagina-Contacto*/
+.pagina-contacto {
+    margin: 6rem 0rem;
+}
+
+.pagina-contacto h1 {
+    color: darkcyan;
+    margin-top: 10rem;
+}
